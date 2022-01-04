@@ -1,0 +1,13 @@
+.reviews{
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 450px){
+    .reviews{
+        padding: 0 3rem;
+    }
+}

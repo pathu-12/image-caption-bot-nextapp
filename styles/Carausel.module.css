@@ -1,0 +1,156 @@
+.carausel_container{
+    padding: 0 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carausel_image{
+    width: 30rem;
+    animation: bounce 1s linear infinite;
+}
+.carausel_heading{
+    font-weight: 500;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.carausel_heading_body{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.carausel_heading_subbody{
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.carausel_link a:link, .carausel_link a:visited{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    color: #f8f9fa;
+    background-color: #212529;
+    border-radius: 2rem;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-5px);
+    }
+    20%{
+        transform: translateY(-6px);
+    }
+    30%{
+        transform: translateY(-7px);
+    }
+    40%{
+        transform: translateY(-8px);
+    }
+    50%{
+        transform: translateY(-7px);
+    }
+    60%{
+        transform: translateY(-6px);
+    }
+    70%{
+        transform: translateY(-5px);
+    }
+    80%{
+        transform: translateY(-4px);
+    }
+    90%{
+        transform: translateY(-3px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 1155px){
+    .carausel_container{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .carausel_left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carausel_heading{
+        font-size: 2.5rem;
+    }
+    .carausel_image{
+        width: 25rem;
+    }
+    .carausel_heading_body{
+        font-size: 1.2rem;
+    }
+    .carausel_heading_subbody{
+        font-size: 0.8rem;
+    }
+    .carausel_link a:link, .carausel_link a:visited{
+        font-size: 0.8rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carausel_heading{
+        font-size: 2rem;
+    }
+    .carausel_image{
+        width: 20rem;
+    }
+    .carausel_heading_body{
+        font-size: 1rem;
+    }
+    .carausel_heading_subbody{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 512px){
+    .carausel_container{
+        padding: 0 3rem;
+    }
+    .carausel_heading{
+        font-size: 1.5rem;
+    }
+    .carausel_heading_body{
+        font-size: 0.9rem;
+    }
+    .carausel_heading_subbody{
+        font-size: 0.6rem;
+    }
+    .carausel_image{
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 405px){
+    .carausel_container{
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .carausel_heading_body{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+}

@@ -1,7 +1,21 @@
-import '../styles/globals.css'
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import "../styles/globals.css";
+import Head from "next/head"
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const myapp = ({ Component, pageProps }) => {
+    return (
+        <>
+            <Head>
+                <title>Image Caption Bot</title>
+            </Head>
+            <Navbar />
+            <div className="page">
+                <Component {...pageProps} className="page" />
+            </div>
+            <Footer/>
+        </>
+    );
+};
 
-export default MyApp
+export default myapp;
